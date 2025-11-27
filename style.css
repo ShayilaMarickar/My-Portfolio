@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #001f3f;
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 0 12%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #004080;
+    position: sticky;
+    top: 0;
+    background-color: #001f3f;
+    z-index: 10;
+}
+
+header .logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #a9d6ff;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #89d4ff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #89c4ff;
+    padding-bottom: 5px;
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+    background: none;
+    border: 2px solid #89c4ff;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#theme-toggle:hover {
+    transform: rotate(20deg);
+    box-shadow: 0 0 15px rgba(137, 196, 255, 0.5);
+}
+
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #003366;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #a9d6ff;
+    border-left: 4px solid #89c4ff;
+    padding-left: 10px;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-me {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-me h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+.about-me:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 50, 0.6);
+}
+
+.profile-picture {
+    flex-shrink: 0;
+}
+
+.profile-picture img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #004080;
+    box-shadow: 0 0 20px rgba(137, 196, 255, 0.3);
+}
+
+.profile-picture:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 50, 0.6);
+}
+
+.parallel-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin: 50px 0;
+}
+
+.education,
+.skills {
+    background: #00264d;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #89c4ff;
+}
+
+.education:hover,
+.skills:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 50, 0.6);
+}
+
+.year {
+    float: right;
+    color: #89c4ff;
+    font-weight: 600;
+}
+
+#projects {
+    padding-bottom: 40px;
+}
+
+.project-card {
+    background: #00264d;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border-left: 5px solid #89c4ff;
+    box-shadow: 0 3px 6px rgba(0, 0, 30, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.project-card h3 {
+    color: #a9d6ff;
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    margin-bottom: 12px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    background: #0059b3;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.project-card a:hover {
+    background: #0073e6;
+    transform: translateX(3px);
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 50, 0.6);
+}
+
+.project-icon {
+    margin-right: 10px;
+    color: #89c4ff;
+    font-size: 1.3rem;
+    transition: transform .3s ease, color .3s ease;
+}
+
+.project-card:hover .project-icon {
+    transform: scale(1.25);
+    color: #ffffff;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.05rem;
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    color: #89c4ff;
+    width: 30px;
+    text-align: center;
+}
+
+#contact a {
+    color: #89c4ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.contact-form-container {
+    background: #00264d;
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 5px solid #89c4ff;
+    box-shadow: 0 3px 6px rgba(0, 0, 30, 0.4);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-container h3 {
+    color: #a9d6ff;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #a9d6ff;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background: #001f3f;
+    border: 2px solid #004080;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #89c4ff;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    background: #0059b3;
+    color: #ffffff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background: #0073e6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 115, 230, 0.3);
+}
+
+/* -------------------- 
+   8. LIGHT MODE STYLES 
+   -------------------- */
+body.light-mode {
+    background-color: 	#DCDCDC;
+    color: #1a1a1a;
+}
+
+/* Light Mode - Header */
+body.light-mode header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+body.light-mode header .logo {
+    color: #0059b3;
+}
+
+body.light-mode nav a {
+    color: #0073e6;
+}
+
+body.light-mode nav a:hover {
+    color: #004080;
+    border-bottom: 2px solid #0059b3;
+}
+
+body.light-mode #theme-toggle {
+    border: 2px solid #0073e6;
+}
+
+/* Light Mode - Sections */
+body.light-mode section {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+body.light-mode section h2 {
+    color: #0059b3;
+    border-left: 4px solid #0073e6;
+}
+
+/* Light Mode - Profile Picture */
+body.light-mode .profile-picture img {
+    border: 6px solid #0073e6;
+}
+
+/* Light Mode - Cards (Projects, Education, Skills) */
+body.light-mode .project-card,
+body.light-mode .education,
+body.light-mode .skills {
+    background: #ffffff;
+    border-left: 5px solid #0073e6;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .project-card h3 {
+    color: #0059b3;
+}
+
+body.light-mode .project-card a {
+    background: #0073e6;
+}
+
+body.light-mode .project-card a:hover {
+    background: #0059b3;
+}
+
+/* Light Mode - Contact Section */
+body.light-mode .contact-item i {
+    color: #0073e6;
+}
+
+body.light-mode #contact a {
+    color: #0073e6;
+}
+
+body.light-mode #contact a:hover {
+    color: #004080;
+}
+
+body.light-mode .contact-form-container {
+    background: #ffffff;
+    border-left: 5px solid #0073e6;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .contact-form-container h3 {
+    color: #0059b3;
+}
+
+body.light-mode .form-group label {
+    color: #0059b3;
+}
+
+body.light-mode .form-group input,
+body.light-mode .form-group textarea {
+    background: #f5f5f5;
+    border: 2px solid #e0e0e0;
+    color: #1a1a1a;
+}
+
+body.light-mode .form-group input:focus,
+body.light-mode .form-group textarea:focus {
+    border-color: #0073e6;
+}
+
+body.light-mode .submit-btn {
+    background: #0073e6;
+}
+
+body.light-mode .submit-btn:hover {
+    background: #0059b3;
+}
+
+/* -------------------- 
+   9. RESPONSIVE DESIGN 
+   -------------------- */
+
+/* Tablet & Mobile */
+@media (max-width: 900px) {
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-picture img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .parallel-sections {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 0 6%;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 10px;
+    }
+}
