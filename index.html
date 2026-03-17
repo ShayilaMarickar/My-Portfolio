@@ -1,172 +1,530 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shums Marickar Fawzul Shayila | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shayila Marickar — Software Engineer & IT Undergraduate building toward Cybersecurity and DevOps." />
+  <title>Shayila Marickar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!--HEADER-->
-    <header>
-      <button id="theme-toggle" aria-label="Toggle theme">
-        ☀️
-    </button>
-        <h1 class="logo">Shums Marickar Fawzul Shayila</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="Updated General CV.pdf" download class="download-cv-btn">Download CV</a>
-        </nav>
-    </header>
+  <!-- ANIMATED BG -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+  </div>
 
-     <!--ABOUT SECTION-->
-    <section id="about">
-      <div class="about-me">
-        <h2>Hi, I'm Shayila Marickar</h2>
-        <p>
-            I’m <strong>Shums Marickar Fawzul Shayila</strong>, an IT undergraduate specializing in Data Science, Machine Learning, and Cyber Security. I develop data-driven applications using Python, deploy APIs with FastAPI, and create analytical solutions using Streamlit. I am motivated by solving real-world technical challenges and continually improving my skills in modern software practices.
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-bracket">[</span>SM<span class="logo-bracket">]</span>
+      </a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="toggle-track">
+            <span class="toggle-thumb"></span>
+            <span class="toggle-icon toggle-icon--sun">☀</span>
+            <span class="toggle-icon toggle-icon--moon">☽</span>
+          </span>
+        </button>
+        <a href="My_CV.pdf" download="Shayila_Marickar_CV.pdf" class="btn btn--cv">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          CV
+        </a>
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#about" class="nav-mobile-link">About</a>
+      <a href="#education" class="nav-mobile-link">Education</a>
+      <a href="#projects" class="nav-mobile-link">Projects</a>
+      <a href="#skills" class="nav-mobile-link">Skills</a>
+      <a href="#contact" class="nav-mobile-link">Contact</a>
+      <a href="My_CV.pdf" download="Shayila_Marickar_CV.pdf" class="btn btn--cv nav-mobile-btn">Download CV</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-inner container">
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring">
+          <div class="ring-spin"></div>
+          <img src="https://avatars.githubusercontent.com/u/160050595?v=4" alt="Shayila Marickar" class="hero-photo" />
+        </div>
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          Available for opportunities
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-eyebrow">// hello world, I'm</p>
+        <h1 class="hero-name">Shayila <span class="hero-name-accent">Marickar</span></h1>
+        <p class="hero-role">
+          <span class="role-chip">Software Engineer</span>
+          <span class="role-arrow">→</span>
+          <span class="role-chip role-chip--glow">Cybersecurity</span>
+        </p>
+        <p class="hero-bio">
+          IT undergraduate building REST APIs, full-stack apps, and CI/CD pipelines.
+          Steadily moving toward application security, cloud security, and DevSecOps.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn--primary">View Projects</a>
+          <a href="My_CV.pdf" download="Shayila_Marickar_CV.pdf" class="btn btn--ghost">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV
+          </a>
+        </div>
+        <p class="hero-location">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Galle, Sri Lanka
         </p>
       </div>
-
-      <div class="profile-picture">
-        <img src="WhatsApp Image 2025-04-02 at 22.24.45.jpeg" alt="Shayila Marickar Profile Picture">
-      </div>
-    </section>
-
-        <div class="parallel-sections">
-        <section id="education" class="education">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>BSc (Hons) in Information Technology</strong><br>Horizon Campus <span class="year">2022 – 2027</span><br>4th Year, Specializing in Data Science & Cyber Security</li>
-                <li><strong>Diploma in English</strong><br>University of Sri Jayawardenepura <span class="year">2022 – 2024</span></li>
-                <li><strong>G.C.E. Advanced Level (Physical Science)</strong><br>Anula Devi Balika Vidyalaya <span class="year">2020</span></li>
-            </ul>
-        </section>
-
-        <section id="skills" class="skills">
-            <h2>Skills</h2>
-            <p><strong>Programming:</strong> Python, Java, C, JavaScript</p>
-            <p><strong>Data Science:</strong> Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn</p>
-            <p><strong>Tools & Platforms:</strong> Linux, Git, FastAPI, Streamlit, Docker, GitHub Actions, Bash</p>
-            <p><strong>Soft Skills:</strong> Creative and Analytical Thinking, Problem-solving, Teamwork, Communication</p>
-            <p><strong>Languages:</strong> Sinhala (Native), English, Tamil</p>
-        </section>
     </div>
+    <div class="scroll-hint" aria-hidden="true"><span></span></div>
+  </section>
 
-    <!--PROJECTS SECTION-->
-    <section id="projects">
-        <h2>Projects</h2>
-        <article class="project-card">
-            <h3><i class="fa-solid fa-calculator project-icon"></i> Income Tax Calculator</h3>
-            <p>A simple Java application to calculate government taxes based on salaries.</p>
-            <p>A Java-based desktop tool that lets users compute their income tax easily. This simple calculator handles taxable income inputs, applies standard deductions, and calculates the net tax liability. The implementation is straightforward and serves as a practical utility for quick tax estimation.</p> 
-            <a href="https://github.com/ShayilaMarickar/Income-Tax-Calculator" target="_blank">🔗 View Project</a>
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card card">
+          <p>
+            I'm <strong>Shums Marickar Fawzul Shayila</strong> — a 4th-year IT undergraduate with a hands-on
+            focus on backend development, DevOps automation, and cloud-aware system design.
+          </p>
+          <p>
+            My path started with Python and machine learning, grew into building Java full-stack systems with
+            Spring Boot and React, and is now pointing firmly toward <strong>application security</strong> and
+            <strong>cloud security</strong>. I automate what I can — CI/CD pipelines, containerised deployments,
+            and repeatable infrastructure.
+          </p>
+          <p>
+            I build things that are functional, secure by default, and clean to maintain.
+            Ethical note: I only test systems I own or have explicit permission to test.
+          </p>
+        </div>
+        <div class="about-facts">
+          <div class="fact-row card">
+            <span class="fact-icon">🎓</span>
+            <div>
+              <span class="fact-label">Degree</span>
+              <span class="fact-value">BSc (Hons) IT · Horizon Campus · 4th Year</span>
+            </div>
+          </div>
+          <div class="fact-row card">
+            <span class="fact-icon">⚙️</span>
+            <div>
+              <span class="fact-label">Backend</span>
+              <span class="fact-value">Java · Spring Boot · FastAPI · REST APIs</span>
+            </div>
+          </div>
+          <div class="fact-row card">
+            <span class="fact-icon">🐳</span>
+            <div>
+              <span class="fact-label">DevOps</span>
+              <span class="fact-value">Docker · GitHub Actions · Linux · CI/CD</span>
+            </div>
+          </div>
+          <div class="fact-row card">
+            <span class="fact-icon">🔐</span>
+            <div>
+              <span class="fact-label">Target</span>
+              <span class="fact-value">AppSec · Cloud Security · DevSecOps</span>
+            </div>
+          </div>
+          <div class="fact-row card">
+            <span class="fact-icon">📍</span>
+            <div>
+              <span class="fact-label">Location</span>
+              <span class="fact-value">Galle, Sri Lanka</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section section--alt" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="edu-timeline">
+
+        <div class="edu-item card">
+          <div class="edu-dot"></div>
+          <div class="edu-content">
+            <div class="edu-meta">
+              <span class="edu-year">Present</span>
+              <span class="edu-badge edu-badge--active">Current</span>
+            </div>
+            <h3 class="edu-title">BSc (Hons) in Information Technology</h3>
+            <p class="edu-inst">Horizon Campus — Malabe</p>
+            <p class="edu-desc">4th year undergraduate. Focus on software engineering, data science, and security fundamentals.</p>
+          </div>
+        </div>
+
+        <div class="edu-item card">
+          <div class="edu-dot"></div>
+          <div class="edu-content">
+            <div class="edu-meta">
+              <span class="edu-year">Nov 2023</span>
+            </div>
+            <h3 class="edu-title">Diploma in English</h3>
+            <p class="edu-inst">University of Sri Jayawardanapura — Nugegoda</p>
+          </div>
+        </div>
+
+        <div class="edu-item card">
+          <div class="edu-dot"></div>
+          <div class="edu-content">
+            <div class="edu-meta">
+              <span class="edu-year">Oct 2020</span>
+            </div>
+            <h3 class="edu-title">G.C.E. Advanced Level — Physical Science</h3>
+            <p class="edu-inst">Anula Devi Balika Vidyalaya — Galle</p>
+          </div>
+        </div>
+
+        <div class="edu-item card">
+          <div class="edu-dot"></div>
+          <div class="edu-content">
+            <div class="edu-meta">
+              <span class="edu-year">2025</span>
+              <span class="edu-badge">Certifications</span>
+            </div>
+            <h3 class="edu-title">Professional Certificates</h3>
+            <div class="cert-list">
+              <div class="cert-item">
+                <span class="cert-icon">🐧</span>
+                <div>
+                  <span class="cert-name">Professional Certificate in Linux</span>
+                  <span class="cert-issuer">IIT-PDU · Feb 2025</span>
+                </div>
+              </div>
+              <div class="cert-item">
+                <span class="cert-icon">🔀</span>
+                <div>
+                  <span class="cert-name">Certificate in Git</span>
+                  <span class="cert-issuer">Horizon Campus · Jan 2025</span>
+                </div>
+              </div>
+              <div class="cert-item">
+                <span class="cert-icon">☕</span>
+                <div>
+                  <span class="cert-name">Advanced Certificate in Java</span>
+                  <span class="cert-issuer">Learnify Academy · Jun 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <p class="section-sub">Things I've built.</p>
+      <div class="projects-grid">
+
+        <article class="project-card card">
+          <div class="project-shine"></div>
+          <div class="project-header">
+            <span class="project-icon">⚙️</span>
+            <div class="project-tags">
+              <span class="tag">Spring Boot</span>
+              <span class="tag">React</span>
+              <span class="tag">Java</span>
+            </div>
+          </div>
+          <h3 class="project-title">Full Stack Task Manager</h3>
+          <p class="project-desc">
+            Spring Boot 3.5 REST API backend + React frontend. Live CRUD, dark/light mode,
+            real-time task tracking, and Spring Data JPA with H2.
+          </p>
+          <a href="https://github.com/ShayilaMarickar/Springboot-React-Task-Manager" target="_blank" rel="noopener" class="project-link">
+            View on GitHub
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
         </article>
 
-        <article class="project-card">
-    <h3><i class="fa-solid fa-house-circle-check project-icon"></i> House Price Prediction API (FastAPI)</h3>
-    <p>REST API for house price prediction — preprocessing, feature engineering, and regression models (R² ≈ 92%).</p>
-    <p>A RESTful API built with FastAPI to serve a machine learning model for predicting house prices. The backend loads a pre-trained regression model (model.pkl) and a scaler (scaler.pkl), takes input features via HTTP, and returns predicted house prices. It includes endpoints such as a health check and prediction, demonstrating integration of ML with modern web APIs.</p>
-    <a href="https://github.com/ShayilaMarickar/FastAPI-Application" target="_blank">🔗 View on GitHub</a>
-  </article>
-
-  <article class="project-card">
-    <h3><i class="fa-solid fa-wine-glass project-icon"></i> Wine Quality Prediction (Streamlit)</h3>
-    <p>Interactive Streamlit web app with EDA and deployed classification models for wine quality prediction (~85% accuracy).</p>
-    <p>A web application built with Streamlit that provides an interactive interface for exploring a wine-quality dataset and predicting wine quality. Users can:</p>
-    <ul>
-      <li>Explore the dataset (view distributions, correlations)</li>
-      <li>Input wine features via sliders / fields to get a quality prediction</li>
-      <li>See model performance metrics and evaluation visuals</li>
-    </ul>
-    <a href="https://github.com/ShayilaMarickar/Streamlit-Application" target="_blank">🔗 Source on GitHub</a>
-    &nbsp;•&nbsp;
-    <a href="https://shayilamarickar-streamlit-application-app-bphpdb.streamlit.app/" target="_blank">🔗 Live App</a>
-  </article>
-
-  <article class="project-card">
-    <h3><i class="fa-solid fa-gears project-icon"></i> DevOps CI/CD Pipeline</h3>
-    <p>Automated CI/CD pipelines using GitHub Actions and Docker; Bash scripting for tests and deployment automation.</p>
-    <p>A React-based fitness website project with a DevOps pipeline. This repo demonstrates deployment and CI/CD practices: it includes GitHub Actions workflows, environment setup, and build scripts (npm-based). The project showcases her first hands-on experience applying DevOps to a web app, ensuring code is tested, built, and deployed reliably.</p>
-    <a href="https://github.com/ShayilaMarickar/DevOps-Project" target="_blank">🔗 View on GitHub</a>
-  </article>
-    </section>
-
-    <!--CONTACT SECTION-->
-  <section id="contact">
-    <h2>Contact</h2>
-    
-    <!-- NEW: Add this wrapper div -->
-    <div class="contact-layout">
-        
-        <!-- Contact Information with Icons -->
-        <div class="contact-info">
-            <div class="contact-item">
-                <i class="fa-solid fa-envelope"></i>
-                <span>Email: 
-                    <a href="mailto:marickarshayila@gmail.com" target="_blank">
-                        marickarshayila@gmail.com
-                    </a>
-                </span>
+        <article class="project-card card">
+          <div class="project-shine"></div>
+          <div class="project-header">
+            <span class="project-icon">🏠</span>
+            <div class="project-tags">
+              <span class="tag">FastAPI</span>
+              <span class="tag">Python</span>
+              <span class="tag">ML</span>
             </div>
+          </div>
+          <h3 class="project-title">House Price Prediction API</h3>
+          <p class="project-desc">
+            REST API with FastAPI and Scikit-learn. Preprocessing, feature engineering,
+            and regression models achieving 92% R² score.
+          </p>
+          <a href="https://github.com/ShayilaMarickar/FastAPI-Application" target="_blank" rel="noopener" class="project-link">
+            View on GitHub
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </article>
 
-            <div class="contact-item">
-                <i class="fa-brands fa-linkedin"></i>
-                <span>LinkedIn: 
-                    <a href="https://www.linkedin.com/in/fawzul-shayila-4b6246254" target="_blank">
-                        linkedin.com/in/fawzul-shayila
-                    </a>
-                </span>
+        <article class="project-card card">
+          <div class="project-shine"></div>
+          <div class="project-header">
+            <span class="project-icon">🍷</span>
+            <div class="project-tags">
+              <span class="tag">Streamlit</span>
+              <span class="tag">Python</span>
+              <span class="tag">ML</span>
             </div>
+          </div>
+          <h3 class="project-title">Wine Quality Classifier</h3>
+          <p class="project-desc">
+            Interactive Streamlit app for wine quality classification — 85% accuracy.
+            Histograms, heatmaps, and scatter plots for EDA.
+          </p>
+          <a href="https://github.com/ShayilaMarickar/Streamlit-Application" target="_blank" rel="noopener" class="project-link">
+            View on GitHub
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </article>
 
-            <div class="contact-item">
-                <i class="fa-brands fa-github"></i>
-                <span>GitHub: 
-                    <a href="https://github.com/ShayilaMarickar" target="_blank">
-                        github.com/ShayilaMarickar
-                    </a>
-                </span>
+        <article class="project-card card">
+          <div class="project-shine"></div>
+          <div class="project-header">
+            <span class="project-icon">🔄</span>
+            <div class="project-tags">
+              <span class="tag">Docker</span>
+              <span class="tag">GitHub Actions</span>
+              <span class="tag">Bash</span>
             </div>
-        </div>
+          </div>
+          <h3 class="project-title">DevOps CI/CD Pipeline</h3>
+          <p class="project-desc">
+            Automated CI/CD with GitHub Actions, Docker, and Bash. Testing and deployment
+            pipelines across all SDLC phases.
+          </p>
+          <a href="https://github.com/ShayilaMarickar/DevOps-Project" target="_blank" rel="noopener" class="project-link">
+            View on GitHub
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </article>
 
-        <!-- Contact Form -->
-<div class="contact-form-container">
-    <h3>Send me a message</h3>
-   
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-        </div>
+        <article class="project-card card">
+          <div class="project-shine"></div>
+          <div class="project-header">
+            <span class="project-icon">🧮</span>
+            <div class="project-tags">
+              <span class="tag">Java</span>
+            </div>
+          </div>
+          <h3 class="project-title">Income Tax Calculator</h3>
+          <p class="project-desc">
+            Java project implementing a clean income tax calculator with structured logic and user input handling.
+          </p>
+          <a href="https://github.com/ShayilaMarickar/Income-Tax-Calculator" target="_blank" rel="noopener" class="project-link">
+            View on GitHub
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </article>
 
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-
-        <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" required>
-        </div>
-
-        <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-        </div>
-
-        <button type="submit" class="submit-btn">Send Message</button>
-    </form>
-</div>
-        
+      </div>
     </div>
-    <!-- END of wrapper div -->
-</section>
+  </section>
 
-<script src="script.js"></script>
+  <!-- SECURITY & DEVOPS (FUTURE) -->
+  <section class="section section--alt" id="security">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Security &amp; DevOps</h2>
+      </div>
+      <p class="section-sub">Coming soon — actively building in this space.</p>
+      <div class="future-grid">
+        <div class="future-card card">
+          <span class="future-icon">🔐</span>
+          <h3>Application Security</h3>
+          <p>Labs on web app vulnerabilities, secure API design, and OWASP practices.</p>
+          <span class="future-badge future-badge--wip">In Progress</span>
+        </div>
+        <div class="future-card card">
+          <span class="future-icon">☁️</span>
+          <h3>Cloud Security</h3>
+          <p>IAM configuration, cloud hardening, and infrastructure security experiments.</p>
+          <span class="future-badge">Planned</span>
+        </div>
+        <div class="future-card card">
+          <span class="future-icon">🛡️</span>
+          <h3>DevSecOps</h3>
+          <p>SAST, dependency checks, and secrets detection integrated into CI/CD pipelines.</p>
+          <span class="future-badge">Planned</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group card">
+          <h4 class="skill-group-title"><span class="sg-icon">{ }</span> Languages</h4>
+          <div class="skill-list">
+            <span class="skill-item">Python</span>
+            <span class="skill-item">Java</span>
+            <span class="skill-item">JavaScript</span>
+            <span class="skill-item">C#</span>
+            <span class="skill-item">Bash</span>
+          </div>
+        </div>
+        <div class="skill-group card">
+          <h4 class="skill-group-title"><span class="sg-icon">◈</span> Frameworks</h4>
+          <div class="skill-list">
+            <span class="skill-item">Spring Boot</span>
+            <span class="skill-item">React</span>
+            <span class="skill-item">FastAPI</span>
+            <span class="skill-item">Streamlit</span>
+          </div>
+        </div>
+        <div class="skill-group card">
+          <h4 class="skill-group-title"><span class="sg-icon">◉</span> Data &amp; ML</h4>
+          <div class="skill-list">
+            <span class="skill-item">Scikit-learn</span>
+            <span class="skill-item">Pandas</span>
+            <span class="skill-item">NumPy</span>
+            <span class="skill-item">Visualisation</span>
+          </div>
+        </div>
+        <div class="skill-group card">
+          <h4 class="skill-group-title"><span class="sg-icon">⬡</span> DevOps &amp; Tools</h4>
+          <div class="skill-list">
+            <span class="skill-item">Docker</span>
+            <span class="skill-item">Git</span>
+            <span class="skill-item">GitHub Actions</span>
+            <span class="skill-item">Linux</span>
+            <span class="skill-item">Spring Data JPA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">06</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <p class="section-sub">Have a project or opportunity? Send me a message.</p>
+      <div class="contact-layout">
+
+        <!-- Form -->
+        <form class="contact-form card" id="contactForm"
+          action="https://formsubmit.co/marickarshayila@gmail.com"
+          method="POST">
+          <input type="hidden" name="_subject" value="Portfolio Contact — Shayila" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-input form-textarea" id="message" name="message" placeholder="What's on your mind?" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            Send Message
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+
+        <!-- Links -->
+        <div class="contact-info">
+          <a href="mailto:marickarshayila@gmail.com" class="contact-card card">
+            <span class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            <div>
+              <span class="contact-label-sm">Email</span>
+              <span class="contact-label">marickarshayila@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://github.com/ShayilaMarickar" target="_blank" rel="noopener" class="contact-card card">
+            <span class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </span>
+            <div>
+              <span class="contact-label-sm">GitHub</span>
+              <span class="contact-label">ShayilaMarickar</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/fawzul-shayila-4b6246254/" target="_blank" rel="noopener" class="contact-card card">
+            <span class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </span>
+            <div>
+              <span class="contact-label-sm">LinkedIn</span>
+              <span class="contact-label">shayilamarickar</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <span class="footer-logo">[SM]</span>
+      <p>© 2026 Shayila Marickar · Built with care</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
