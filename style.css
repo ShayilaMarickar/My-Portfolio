@@ -394,6 +394,51 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 }
 .fact-value{font-size:0.88rem;color:var(--txt-2)}
 
+/* ---- EXPERIENCE ---- */
+.exp-timeline{display:flex;flex-direction:column;gap:var(--sp-md);position:relative}
+.exp-timeline::before{
+  content:'';position:absolute;left:20px;top:0;bottom:0;
+  width:1.5px;
+  background:linear-gradient(to bottom,var(--accent2),var(--accent),transparent);
+  opacity:0.3;
+}
+.exp-item{position:relative;margin-left:48px;padding:var(--sp-lg)}
+.exp-dot{
+  position:absolute;left:-35px;top:26px;
+  width:12px;height:12px;border-radius:50%;
+  background:var(--accent2);
+  box-shadow:0 0 0 3px var(--bg),0 0 0 5px var(--accent2-glow);
+  animation:pulse-cyan 2.5s ease infinite;
+}
+@keyframes pulse-cyan{
+  0%,100%{box-shadow:0 0 0 3px var(--bg),0 0 0 5px var(--accent2-glow)}
+  50%{box-shadow:0 0 0 3px var(--bg),0 0 0 8px rgba(34,211,238,0.08)}
+}
+.exp-meta{display:flex;align-items:center;gap:var(--sp-sm);margin-bottom:var(--sp-sm)}
+.exp-period{
+  font-family:var(--font-mono);font-size:0.78rem;
+  color:var(--accent2);letter-spacing:0.04em;
+}
+.exp-top{
+  display:flex;align-items:flex-start;
+  justify-content:space-between;gap:var(--sp-md);
+  margin-bottom:var(--sp-sm);
+}
+.exp-title{font-size:1.05rem;font-weight:600;color:var(--txt);margin-bottom:4px}
+.exp-company{
+  display:flex;align-items:center;gap:6px;
+  font-size:0.88rem;color:var(--txt-2);
+}
+.exp-company-name{font-weight:500;color:var(--accent)}
+.exp-sep{color:var(--txt-3)}
+.exp-team{color:var(--txt-2)}
+.exp-logo{font-size:2rem;flex-shrink:0;opacity:0.85}
+.exp-desc{
+  font-size:0.88rem;color:var(--txt-2);
+  line-height:1.72;margin-bottom:var(--sp-sm);
+}
+.exp-tags{display:flex;gap:6px;flex-wrap:wrap}
+
 /* ---- EDUCATION ---- */
 .edu-timeline{
   display:flex;flex-direction:column;gap:var(--sp-md);
